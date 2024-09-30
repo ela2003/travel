@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailored plan</title>
+</head>
+
+<body>
+    <header class="text-white-600 body-font" style="background-color: rgb(148, 112, 112);">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+                <span class="ml-3 text-xl">CluTrip</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900">Discover</a>
+                <a class="mr-5 hover:text-gray-900">Community</a>
+                <a class="mr-5 hover:text-gray-900">Special Deals</a>
+                <a class="mr-5 hover:text-gray-900">about us</a>
+            </nav>
+            <button
+                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+                <a href="index.html">Home</a>
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg> -->
+            </button>
+        </div>
+    </header>
+
+    <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete" style="width:300px;">
+          <input id="myInput" type="text" name="myCountry" placeholder="Country">
+        </div>
+        <div>
+            <h1>GeeksforGeeks</h1>
+            <h3>Click on the button to see image</h3>
+            <!-- Add id to image -->
+            <img id="image" 
+                 src=
+    "https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3.png"
+                 alt="GFG image" />
+        </div>
+        <button type="button" onclick="show()" id="btnID">
+            Show Image
+        </button>
+      </form>
+
+     
+
+    <script>
+        function show() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('image')
+                .style.display = "block";
+            document.getElementById('btnID')
+                .style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
